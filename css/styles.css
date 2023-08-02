@@ -74,6 +74,9 @@ p{
 }
 
 .footer{
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     text-align: center;
     font-size: 2rem;
     background-color: var(--gris);
