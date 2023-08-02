@@ -13,6 +13,7 @@ html{
 }
 
 body{
+    max-width: 100%;
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
@@ -71,6 +72,10 @@ p{
     text-align: center;
     color: var(--oscuro);
     background-color: var(--secundario);
+}
+
+.cv{
+    text-align: center;
 }
 
 .footer{
