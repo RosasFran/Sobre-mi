@@ -3,61 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Sobre-mi/css/styles.css">
-    <title>Practico 0</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego!</title>
 </head>
 <body>
     <header>
-        <h1 class="titulo">Mi primer Practico<h1> <!-- <h1> lo usé porque el título principal es el más importante y las class usadas a lo largo del HTML son necesarias para poder darle estilo a la páguina com CSS -->
+        <h1 class="titulo">¡Piedra, Papel o Tijera!</h1>
     </header>
+
     <main>
-    <article>
-        <h2 class="datos">Datos Personales</h2>
-        
-        <ul class="contenidos-datos">
-            <li><strong>Nombre:</strong> Franco</li>
-            <li><strong>Apellido:</strong> Rosas</li>
-            <li><strong>Edad:</strong> 29</li>
-            <li><strong>País:</strong> Argentina</li>
-        </ul>
-    </article>
-    <article>
-        <h2 class="datos">Intereses</h2>
-        <ul>
-            <div class="contenedor"> <!-- El uso de la etiqueta <div></div> fueron necesarios para poder implementar el GRID en el CSS -->
-            <div class="contenido1">
-                <li>Programación</li>
-                <img src="/Sobre-mi/imagenes/programacion.jpg" alt="Programacion"> <!-- Los IMG necesario para poder mostrar la imágen en la páguina web -->
-            </div>
-            <div class="contenido2">
-                <li>Video Juegos</li>
-                <img src="/Sobre-mi/imagenes/videojuegos.jpg" alt="Video Juegos">
-            </div>
-            <div class="contenido3">
-                <li>Tocar Guitarra</li>
-                <img src="/Sobre-mi/imagenes/guitarra.jpg" alt="Tocar Guitarra">
-            </div>
-            <div class="contenido4">
-                <li>Leer</li>
-                <img src="/Sobre-mi/imagenes/leer.jpg" alt="Leer">
-            </div>
-            </div>
-            <video autoplay muted loop>
-                <source src="/Sobre-mi/video/concierto.mp4" type="video/mp4"> <!-- La etiqueta <video></video> para que pueda reproducir el video junto con el autoplay el muted y el loop -->
-            </video>
-        </ul>
-    </article>
-    <article>
-        <h2 class="contenido-experiencias">Experiencias</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi libero, veritatis deserunt dolore eligendi eaque autem quas blanditiis quod quibusdam adipisci asperiores aspernatur, nulla obcaecati, quo omnis a. Consequuntur,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit fugit rem, asperiores officiis exercitationem nulla in ducimus hic quibusdam sint. Qui placeat velit asperiores tempora saepe optio autem quibusdam consectetur?</p>
-    </article>
-    <div class="cv">
-        <a href="cv.html">Curriculum Vitae</a>
+        <p class="instrucciones" id="instrucciones">!El primero en llegar a 5 puntos gana!</p>
+
+    <div class="puntaje">
+        <p class="nombre nombre-jugador">Usuario</p>
+        <p class="nombre nombre-computadora">PC</p>
+        <p class="puntos">
+            <span id="puntos-usuario">0</span>
+            <span>-</span>
+            <span id="puntos-computadora">0</span>
+        </p>
     </div>
-        <script></script>
-    </main> 
-    <footer class="footer"> <!-- Final de la páguina -->
-        <p>Franco Rosas. 2023</p>
-    </footer>
+
+    <div class="eleji-tu-opcion " id="eleji-tu-opcion">
+        <div class="opciones">
+            <h2>Selecciona tu opción para el próximo turno</h2>
+        </div>
+            <button class="opcion" id="piedra✊">✊</button>
+            <button class="opcion" id="papel✋">✋</button>
+            <button class="opcion" id="tijera✌">✌</button>
+    </div>
+
+    <div class="mensaje disabled" id="mensaje">
+        <p>
+            Usaste <span class="eleccion" id="eleccion-usuario">papel✋</span><br>
+            La PC usó <span class="eleccion" id="eleccion-computadora">piedra✊</span>
+        </p>
+        <p id="gano-punto">¡¡Ganaste un punto!!😎</p>
+    </div>
+
+    <button class="boton disabled" id="reiniciar">Reiniciar juego</button>
+    </main>
+        <script src="scripts.js"></script>
 </body>
 </html>
