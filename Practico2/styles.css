@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inconsolata&family=Inter:wght@400;700;800&family=Open+Sans&family=PT+Sans:wght@400;700&family=Press+Start+2P&family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Cabin', sans-serif;
+}
+
+:root {
+    --color-marronclaro: burlywood;
+    --color-marronoscuro: brown;
+    --color-negro: black; 
+    
+}
+
+
+body {
+    background-color: var(--color-marronclaro);
+    color: var(--color-negro);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--color-marronoscuro);
+    color: var(--color-marronclaro);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+}
+
+.puntaje {
+    background-color: chocolate;
+    color: var(--color-marronclaro);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.puntaje .nombre {
+    position: absolute;
+    color: var(--color-marronclaro);
+    background-color: var(--color-marronoscuro);
+    line-height: 1;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid chocolate;
+}
+
+.puntaje .nombre-jugador {
+    right: 85%;
+}
+
+.puntaje .nombre-computadora {
+    left: 85%;
+}
+
+.puntaje .puntos {
+    font-size: 1.6rem;
+}
+
+.eleji-tu-opcion {
+    margin-bottom: 2rem;
+}
+
+.eleji-tu-opcion h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.opcion {
+    font-size: 2rem;
+    background-color: var(--color-marronoscuro);
+    border: none;
+    padding: .5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.opcion:hover {
+    background-color: black;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    background-color: var(--color-marronoscuro);
+    color: var(--color-marronclaro);
+    border-radius: .25rem;
+    padding-inline:  .25rem;
+}
+
+.boton {
+    border: none;
+    border-radius: .5rem;
+    line-height: 1;
+    background-color: var(--color-marronoscuro);
+    color: var(--color-marronclaro);
+    font-size: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.disabled {
+    display: none;
+}
