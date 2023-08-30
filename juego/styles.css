@@ -106,7 +106,8 @@ main {
     margin-bottom: 1rem;
 }
 .opcion:hover {
-    background-color: black;
+    background: black;
+    transition: background-color 2s;
 }
 
 .mensaje {
